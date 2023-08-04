@@ -1,8 +1,8 @@
-# Source of data https://www.kaggle.com/datasets/4c8d766e253c62e5910952e619db9267f34c58497a74001571106b157080ee9b?resource=download
+# Source of dataset https://www.kaggle.com/datasets/4c8d766e253c62e5910952e619db9267f34c58497a74001571106b157080ee9b?resource=download
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('data/data.csv')
+data = pd.read_csv('data.csv')
 
 def analytical_solution(dataset):
     avg_x = dataset['Temperature'].mean()
@@ -59,7 +59,7 @@ A = 0
 B = 0
 # L is learning rate 
 L = 0.001
-epochs = 10000
+epochs = 100
 
 #Finding A and B using gradient descent
 A, B = gradient_descent_solution(A, B, data, L, epochs)
